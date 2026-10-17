@@ -1,0 +1,821 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+
+/* =========================
+   TOP HEADER
+========================= */
+
+.top-header {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+    gap: 35px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #DAA520;
+    min-width: 90px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-container {
+    display: flex;
+
+    height: 44px;
+
+    flex: 1;
+
+    max-width: 700px;
+
+    min-width: 300px;
+}
+
+/* Catalog button */
+
+.catalog-button {
+    width: 110px;
+
+    border: none;
+    border-right: 1px solid #d5d5d5;
+
+    background-color: #eef2f2;
+
+    color: #555;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    border-radius: 6px 0 0 6px;
+}
+
+.catalog-button span {
+    font-size: 10px;
+
+    margin-left: 6px;
+}
+
+
+/* Search box */
+
+.search-box {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #eef2f2;
+
+    padding: 0 15px;
+
+    border-radius: 0 6px 6px 0;
+}
+
+
+.search-icon {
+    font-size: 24px;
+
+    color: #777;
+
+    margin-right: 10px;
+}
+
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+
+    color: #333;
+}
+
+
+.search-box input::placeholder {
+    color: #777;
+}
+
+
+/* =========================
+   HEADER ACTIONS
+========================= */
+
+.header-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-left: auto;
+
+    text-decoration: none;
+}
+
+/* Register & Login */
+
+.auth-buttons {
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #edc001;
+
+    border-radius: 7px;
+
+    height: 36px;
+
+    padding: 0 10px;
+}
+
+
+.register-button,
+.login-button {
+    border: none;
+
+    background: transparent;
+
+    color: #DAA520;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.divider {
+    color: #DAA520;
+
+    margin: 0 6px;
+}
+
+
+/* Sell button */
+
+.sell-button {
+    border: none;
+
+    background-color: #DAA520;
+
+    color: white;
+
+    padding: 10px 17px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+/* Help button */
+
+.help-button {
+    width: 28px;
+    height: 28px;
+
+    border: 1px solid #777;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #555;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+/* Language */
+
+.language-button {
+    border: none;
+
+    background: transparent;
+
+    color: #555;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.language-button span {
+    font-size: 9px;
+
+    margin-left: 5px;
+}
+
+
+/* =========================
+   CATEGORY NAVIGATION
+========================= */
+
+.category-nav {
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 38px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.category-nav a {
+    text-decoration: none;
+
+    color: #555;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+
+.category-nav a:hover {
+    color: #edc001;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    width: 100%;
+    height: 530px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    top: 0;
+
+    background-image: url("img/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 0;
+}
+/* =========================
+   HERO CONTENT BOX
+========================= */
+
+.hero-content {
+    position: relative;
+
+    z-index: 1;
+
+    width: 345px;
+    min-height: 235px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    margin-left: calc((100% - 940px) / 2);
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* =========================
+   HERO TITLE
+========================= */
+
+.hero-content h1 {
+    font-size: 24px;
+
+    font-weight: 400;
+
+    line-height: 1.3;
+
+    color: #222;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   HERO BUTTON
+========================= */
+
+.hero-button {
+    width: 100%;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #DAA520;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 20px;
+}
+
+/*=======login====*/
+
+.section-login {
+    width: 100%;
+    height: 530px;
+
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.section-login::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    top: 0;
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 0;
+}
+
+.login-content {
+    position: relative;
+
+    z-index: 1;
+
+    width: 345px;
+    min-height: 235px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    margin-left: calc((100% - 400px) / 2);
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.hero-button:hover {
+    background-color: #DAA520;
+}
+
+
+/* =========================
+   HERO LINK
+========================= */
+
+.hero-link {
+    text-align: center;
+
+    text-decoration: none;
+
+    color: #DAA520;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+
+.hero-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   PRODUCT SECTION
+========================= */
+
+.product-section {
+    width: 100%;
+
+    padding: 45px 0 70px;
+
+    background-color: #ffffff;
+}
+
+
+.product-container {
+    width: 940px;
+
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   PRODUCT HEADER
+========================= */
+
+.product-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.product-header h2 {
+    font-size: 24px;
+
+    font-weight: 600;
+
+    color: #222;
+}
+
+
+.see-all {
+    color: #DAA520;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+.see-all:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 24px 12px;
+}
+
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+    min-width: 0;
+
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.product-image {
+    width: 100%;
+
+    aspect-ratio: 0.78;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background-color: #eeeeee;
+}
+
+
+.product-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   PRODUCT INFO
+========================= */
+
+.product-info {
+    padding: 9px 3px 0;
+}
+
+
+.product-info h3 {
+    margin: 0 0 5px;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    color: #333;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.product-condition,
+.product-size {
+    margin: 0 0 4px;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+
+.product-price {
+    margin: 5px 0;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #222;
+}
+
+
+/* =========================
+   DISCOVERY SECTION
+========================= */
+
+.discovery-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin-top: 45px;
+}
+
+
+.discovery-box {
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    min-height: 150px;
+}
+
+
+.discovery-box h2 {
+    margin: 0 0 18px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #222;
+}
+
+
+/* =========================
+   TAGS
+========================= */
+
+.tag-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.category-tag,
+.brand-tag {
+    display: inline-block;
+
+    padding: 8px 12px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 5px;
+
+    background-color: #ffffff;
+
+    color: #444;
+
+    text-decoration: none;
+
+    font-size: 12px;
+}
+
+
+.category-tag:hover,
+.brand-tag:hover {
+    border-color: #edc001;
+
+    color: #edc001;
+}
+
+/* =========================
+   SEE MORE BUTTON
+========================= */
+
+.see-more-container {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+
+.see-more-button {
+    padding: 11px 28px;
+
+    border: 1px solid #DAA520;
+
+    border-radius: 6px;
+
+    background-color: white;
+
+    color: #DAA520;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.see-more-button:hover {
+    background-color: #f2fafa;
+}
+
+/* =========================
+   LIKE BUTTON
+========================= */
+
+.product-image {
+    position: relative;
+}
+
+
+/* Tombol like */
+
+.like-button {
+    position: absolute;
+
+    right: 8px;
+    bottom: 8px;
+
+    min-width: 42px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 0 8px;
+
+    border: none;
+    border-radius: 18px;
+
+    background-color: white;
+
+    color: #555;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.18);
+
+    z-index: 10;
+
+    transition: transform 0.15s ease;
+}
+
+
+/* Icon hati */
+
+.heart-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+
+/* Jumlah like */
+
+.like-count {
+    font-size: 12px;
+    line-height: 1;
+}
+
+
+/* Saat cursor di atas */
+
+.like-button:hover {
+    transform: scale(1.05);
+}
+
+
+/* Setelah di-like */
+
+.like-button.liked {
+    color: #DAA520;
+}
+
+
+/* Supaya setelah sekali klik tidak terlihat seperti tombol aktif lagi */
+
+.like-button:disabled {
+    cursor: default;
+}
